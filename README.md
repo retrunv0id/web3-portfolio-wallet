@@ -1,6 +1,6 @@
-# Taiko Trailblazers ETH/WETH Swap Script
+# Web3 Balance tracking
 
-## Requirements
+## NOTE
 Web3 ini gua bikin untuk melihat semua isi saldo kalian dari berbagai jaringan
 blast scroll arb op taiko base
 linea zk zora bnb matic manta CyberMainnet mode mantle okx
