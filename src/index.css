@@ -1,0 +1,299 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #212428;
+    margin: 0;
+    padding: 0;
+    color: #b8b8b8;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  h1, h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #b8b8b8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 4px 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.2rem, 4vw, 2rem);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .balance-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 5px 5px 10px #1c1e22, -5px -5px 10px #262a2e;
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: nowrap;
+  }
+  
+  .network-logo {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  
+  .network-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 0;
+  }
+  
+  .network {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .balance, .usdt {
+    white-space: nowrap;
+    margin-left: 8px;
+  }
+  
+  .total-balance {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .footer {
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  .footer-content {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 5px 5px 10px #1c1e22, -5px -5px 10px #262a2e;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto 5px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+.footer-logo-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+  
+  .footer-copyright,
+  .footer-cta,
+  .footer-wallet {
+    margin: 5px 0;
+  }
+  
+  .footer-wallet a {
+    word-break: break-all;
+  }
+  
+button {
+  padding: 10px 25px;
+  font-size: clamp(12px, 3vw, 16px);
+  cursor: pointer;
+  color: #fff9f9;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  transition: all 0.3s ease; /* Transisi untuk semua perubahan */
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, .5),
+              7px 7px 20px 0 rgba(0, 0, 0, .1),
+              4px 4px 5px 0 rgba(0, 0, 0, .1);
+  outline: none;
+  animation: shakeLogo 2s infinite;
+}
+
+@keyframes shakeLogo {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-5px, -5px); }
+  50% { transform: translate(5px, 5px); }
+  75% { transform: translate(-5px, 5px); }
+  100% { transform: translate(5px, -5px); }
+}
+.btn-2 {
+  background: rgb(175, 7, 190);
+  background: linear-gradient(0deg, rgba(96, 9, 240, 1) 0%, rgba(129, 5, 240, 1) 100%);
+  border: none;
+}
+
+/* Terapkan animasi saat hover */
+.btn-2:hover {
+  animation: shake 0.5s ease; /* Durasi animasi */
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5),
+              inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+              inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+  
+  
+  .network { color: #b8b8b8; }
+  .ENS { color: rgb(33, 167, 201); }
+  .wallet { color: rgb(184, 18, 18); }
+  .balance { color: rgb(7, 209, 0); }
+  .usdt { color: rgb(255, 64, 64); }
+  
+  @media (max-width: 480px) {
+    .balance-item {
+      font-size: 14px;
+    }
+  
+    .network-logo {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+    }
+  
+    .balance, .usdt {
+      margin-left: 4px;
+    }
+  
+    .footer-wallet {
+      font-size: 0.8em;
+    }
+  }
+
+  .wallet-info {
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 5px 5px 10px #1c1e22, -5px -5px 10px #262a2e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0 auto 10px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .wallet-info p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-wrap: nowrap;
+    word-break: break-word;
+  }
+  
+  .wallet-info img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+    flex-shrink: 0;
+  }
+  
+  .wallet, .ENS, .ethereum-balance, .refresh-info {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+  }
+  
+  .wallet-label, .ens-label, .eth-label, .refresh-label {
+    min-width: 80px;
+    text-align: left;
+    margin-right: 8px;
+  }
+  
+  .wallet-address, .ens-name, .eth-balance {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center; 
+  }
+  
+  .refresh-info i {
+    margin-right: 5px;
+    flex-shrink: 0;
+  }
+  
+  .usdt {
+    margin-left: 8px;
+  }
+  
+  @media (max-width: 1024px) {
+    .wallet-info {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .wallet-info {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wallet-info {
+      font-size: 12px;
+      padding: 10px;
+    }
+  
+    .wallet-info img {
+      width: 20px;
+      height: 20px;
+      margin-right: 4px;
+    }
+  
+    .wallet, .ENS, .ethereum-balance, .refresh-info {
+      flex-direction: column;
+      align-items: center; /* Menyelaraskan ke tengah */
+    }
+  
+    .wallet-label, .ens-label, .eth-label, .refresh-label {
+      min-width: auto;
+      margin-right: 0;
+      margin-bottom: 4px;
+      text-align: center; /* Mengubah menjadi center untuk perataan tengah */
+    }
+  
+    .wallet-address, .ens-name, .eth-balance {
+      width: 100%;
+      text-align: center; /* Mengubah menjadi center untuk perataan tengah */
+    }
+  }
+
+  
+  
